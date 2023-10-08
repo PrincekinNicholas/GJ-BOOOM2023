@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -32,6 +33,7 @@ public class PlayerController : MonoBehaviour
     private bool isDashButtonDown;
     private RaycastHit raycastHit;
     private State state;
+    private GameObject _player;
     
 
     // Start is called before the first frame update
@@ -40,6 +42,7 @@ public class PlayerController : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody>(); 
         _animator = GetComponentInChildren<Animator>();
         state = State.Normal;
+        _player = this.gameObject;
     }
 
     // Update is called once per frame

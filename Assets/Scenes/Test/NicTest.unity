@@ -1217,6 +1217,7 @@ GameObject:
   - component: {fileID: 1698366454}
   - component: {fileID: 1698366453}
   - component: {fileID: 1698366452}
+  - component: {fileID: 1698366456}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1237,7 +1238,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+  initRollSpeed: 10
+  rollSpeedDropMultiplier: 3
   teleportPower: 2
+  teleportEffect: {fileID: 1754025712446864, guid: f61a21468b226e640856e5bb8921ce12, type: 3}
   lockMovement: 0
   dashLayerMask:
     serializedVersion: 2
@@ -1288,6 +1292,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1698366456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698366451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c20a2b64fc5212439e5eda9fa0c5e91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillTime: 5
+  LightningPrefab: {fileID: 7750081397467685074, guid: aa8d31914758b3849b2bc768b3183deb, type: 3}
 --- !u!1 &1786860203
 GameObject:
   m_ObjectHideFlags: 0
