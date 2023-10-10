@@ -23,6 +23,10 @@ public class PlayerController : MonoBehaviour
     public GameObject teleportEffect;
     public bool lockMovement;
     public LayerMask dashLayerMask;
+    [Tooltip("False表示技能为一定时间内随机触发并禁止按键触发，true表示按键触发")]
+    public bool testSkillMode = true;
+    public float skillTime = 2f;
+    public GameObject LightningPrefab;
     public GameObject ObstaclePrefab;
 
     private Rigidbody _rigidbody;
@@ -44,6 +48,12 @@ public class PlayerController : MonoBehaviour
         _animator = GetComponentInChildren<Animator>();
         state = State.Normal;
         _player = this.gameObject;
+
+        if (!testSkillMode)
+        {
+            InvokeRepeating("RandomSkill", skillTime, skillTime);    //每隔N秒重复调用
+        }
+
     }
 
     // Update is called once per frame
@@ -99,11 +109,20 @@ public class PlayerController : MonoBehaviour
                     _animator.SetBool("isRoll", true);
                 }
 
-                //之后放到技能系统里，或者直接吧技能系统的东西放到该cs文件中
-                if (Input.GetKeyDown(KeyCode.F))
+                //技能测试
+                if (testSkillMode)
                 {
-                    CreateObstacle();
+                    if (Input.GetKeyDown(KeyCode.F))
+                    {
+                        CreateObstacle();
+                    }
+
+                    if (Input.GetKeyDown(KeyCode.R))
+                    {
+                        Lightning();
+                    }
                 }
+                
 
                 break;
             case State.Rolling:
@@ -131,12 +150,6 @@ public class PlayerController : MonoBehaviour
                 Roll();
                 break;
         }
-    }
-
-    void CreateObstacle()
-    {
-        Vector3 pos = this.transform.position + faceDir;
-        Instantiate(ObstaclePrefab, pos, Quaternion.identity);
     }
 
     void Roll()
@@ -191,5 +204,37 @@ public class PlayerController : MonoBehaviour
     public Vector3 GetFaceDir()
     {
         return faceDir;
+    }
+
+    /// -----------------------------------------------------------------------------------------
+    /// 技能列表
+    /// 1 - Lightning
+    /// 2 - CreateObstacle
+    /// -----------------------------------------------------------------------------------------
+
+    void RandomSkill()
+    {
+        int skillIndex = Random.Range(1, 3); //左闭右开,技能增加的话要增加index上限
+        switch( skillIndex)
+        {
+            case 1:
+                Lightning();
+                break;
+            case 2:
+                CreateObstacle();
+                break;
+        }
+    }
+
+    void CreateObstacle()
+    {
+        Vector3 pos = this.transform.position + faceDir;
+        Instantiate(ObstaclePrefab, pos, Quaternion.identity);
+    }
+
+    void Lightning()
+    {
+        //Instantiate(LightningPrefab);
+        Instantiate(LightningPrefab, Vector3.zero, Quaternion.identity);
     }
 }

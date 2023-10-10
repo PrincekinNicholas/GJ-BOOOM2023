@@ -117,7 +117,6 @@ GameObject:
   - component: {fileID: 4406857899713110932}
   - component: {fileID: 4406857899713110935}
   - component: {fileID: 4406857899713110934}
-  - component: {fileID: 4406857899713110938}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -192,17 +191,7 @@ MonoBehaviour:
   dashLayerMask:
     serializedVersion: 2
     m_Bits: 192
---- !u!114 &4406857899713110938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4406857899713110929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c20a2b64fc5212439e5eda9fa0c5e91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  testSkillMode: 0
   skillTime: 5
   LightningPrefab: {fileID: 7750081397467685074, guid: aa8d31914758b3849b2bc768b3183deb, type: 3}
+  ObstaclePrefab: {fileID: 6466787706506410259, guid: b56f5fdea61ea484fb5b2752bcb15777, type: 3}
