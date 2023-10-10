@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>G:\Wwise\Wwise_Project\WwiseTest\Booom\</ProjectRoot>
+		<SourceFilesRoot>G:\Wwise\Wwise_Project\WwiseTest\Booom\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>G:\Wwise\Wwise_Project\WwiseTest\Booom\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>G:\Wwise\Wwise_Project\WwiseTest\Booom\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1100754030" Language="SFX" Hash="1751515736">
+			<ObjectPath>\SoundBanks\Default Work Unit\All</ObjectPath>
+			<ShortName>All</ShortName>
+			<Path>All.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4184429027" Name="angel_switch" ObjectPath="\Events\Default Work Unit\angel_switch" DurationType="OneShot" DurationMin="0.12475" DurationMax="0.12475">
+					<IncludedMemoryFiles>
+						<File Id="956818584" Language="SFX">
+							<ShortName>天使ui切换.wav</ShortName>
+							<Path>SFX\天使ui切换_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="908849409" Name="demon_switch" ObjectPath="\Events\Default Work Unit\demon_switch" DurationType="OneShot" DurationMin="0.177917" DurationMax="0.177917">
+					<IncludedMemoryFiles>
+						<File Id="361517810" Language="SFX">
+							<ShortName>恶魔ui切换.wav</ShortName>
+							<Path>SFX\恶魔ui切换_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="546651181" Name="dog" ObjectPath="\Events\Default Work Unit\dog" DurationType="OneShot" DurationMin="0.310354" DurationMax="0.340604">
+					<IncludedMemoryFiles>
+						<File Id="143284955" Language="SFX">
+							<ShortName>Dog-01.wav</ShortName>
+							<Path>SFX\Dog-01_10C4C929.wem</Path>
+						</File>
+						<File Id="687640702" Language="SFX">
+							<ShortName>Dog-02.wav</ShortName>
+							<Path>SFX\Dog-02_10C4C929.wem</Path>
+						</File>
+						<File Id="915672394" Language="SFX">
+							<ShortName>Dog.wav</ShortName>
+							<Path>SFX\Dog_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1556996917" Name="flash" ObjectPath="\Events\Default Work Unit\flash" DurationType="OneShot" DurationMin="1.695417" DurationMax="1.695417">
+					<IncludedMemoryFiles>
+						<File Id="436674969" Language="SFX">
+							<ShortName>闪现.wav</ShortName>
+							<Path>SFX\闪现_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4058101365" Name="gameStart" ObjectPath="\Events\Default Work Unit\gameStart" DurationType="OneShot" DurationMin="7.656" DurationMax="7.656">
+					<IncludedMemoryFiles>
+						<File Id="1004171676" Language="SFX">
+							<ShortName>天使开始-01.wav</ShortName>
+							<Path>SFX\天使开始-01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="621108255" Name="step" ObjectPath="\Events\Default Work Unit\step" DurationType="OneShot" DurationMin="0.284771" DurationMax="0.314063">
+					<IncludedMemoryFiles>
+						<File Id="70318836" Language="SFX">
+							<ShortName>player脚步-06.wav</ShortName>
+							<Path>SFX\player脚步-06_10C4C929.wem</Path>
+						</File>
+						<File Id="126439561" Language="SFX">
+							<ShortName>player脚步-03.wav</ShortName>
+							<Path>SFX\player脚步-03_10C4C929.wem</Path>
+						</File>
+						<File Id="286102186" Language="SFX">
+							<ShortName>player脚步-07.wav</ShortName>
+							<Path>SFX\player脚步-07_10C4C929.wem</Path>
+						</File>
+						<File Id="338708388" Language="SFX">
+							<ShortName>player脚步-05.wav</ShortName>
+							<Path>SFX\player脚步-05_10C4C929.wem</Path>
+						</File>
+						<File Id="611810473" Language="SFX">
+							<ShortName>player脚步-02.wav</ShortName>
+							<Path>SFX\player脚步-02_10C4C929.wem</Path>
+						</File>
+						<File Id="721170272" Language="SFX">
+							<ShortName>player脚步.wav</ShortName>
+							<Path>SFX\player脚步_10C4C929.wem</Path>
+						</File>
+						<File Id="850462357" Language="SFX">
+							<ShortName>player脚步-01.wav</ShortName>
+							<Path>SFX\player脚步-01_10C4C929.wem</Path>
+						</File>
+						<File Id="890546513" Language="SFX">
+							<ShortName>player脚步-04.wav</ShortName>
+							<Path>SFX\player脚步-04_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="1709289632">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
