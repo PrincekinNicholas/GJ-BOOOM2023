@@ -1,0 +1,25 @@
+Event	ID	Name			Wwise Object Path	Notes
+	546651181	dog			\Default Work Unit\dog	
+	621108255	step			\Default Work Unit\step	
+	908849409	demon_switch			\Default Work Unit\demon_switch	
+	1556996917	flash			\Default Work Unit\flash	
+	4058101365	gameStart			\Default Work Unit\gameStart	
+	4184429027	angel_switch			\Default Work Unit\angel_switch	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	70318836	player脚步-06	G:\Wwise\Wwise_Project\WwiseTest\Booom\.cache\Windows\SFX\player脚步-06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_step\player脚步-06		56616
+	126439561	player脚步-03	G:\Wwise\Wwise_Project\WwiseTest\Booom\.cache\Windows\SFX\player脚步-03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_step\player脚步-03		57868
+	143284955	Dog-01	G:\Wwise\Wwise_Project\WwiseTest\Booom\.cache\Windows\SFX\Dog-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dog\Dog-01		59652
+	286102186	player脚步-07	G:\Wwise\Wwise_Project\WwiseTest\Booom\.cache\Windows\SFX\player脚步-07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_step\player脚步-07		56304
+	338708388	player脚步-05	G:\Wwise\Wwise_Project\WwiseTest\Booom\.cache\Windows\SFX\player脚步-05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_step\player脚步-05		58176
+	361517810	恶魔ui切换	G:\Wwise\Wwise_Project\WwiseTest\Booom\.cache\Windows\SFX\恶魔ui切换_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\恶魔ui切换		34224
+	436674969	闪现	G:\Wwise\Wwise_Project\WwiseTest\Booom\.cache\Windows\SFX\闪现_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\闪现		325584
+	611810473	player脚步-02	G:\Wwise\Wwise_Project\WwiseTest\Booom\.cache\Windows\SFX\player脚步-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_step\player脚步-02		60364
+	687640702	Dog-02	G:\Wwise\Wwise_Project\WwiseTest\Booom\.cache\Windows\SFX\Dog-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dog\Dog-02		62912
+	721170272	player脚步	G:\Wwise\Wwise_Project\WwiseTest\Booom\.cache\Windows\SFX\player脚步_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_step\player脚步		54740
+	850462357	player脚步-01	G:\Wwise\Wwise_Project\WwiseTest\Booom\.cache\Windows\SFX\player脚步-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_step\player脚步-01		57240
+	890546513	player脚步-04	G:\Wwise\Wwise_Project\WwiseTest\Booom\.cache\Windows\SFX\player脚步-04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_step\player脚步-04		56612
+	915672394	Dog	G:\Wwise\Wwise_Project\WwiseTest\Booom\.cache\Windows\SFX\Dog_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dog\Dog		65460
+	956818584	天使ui切换	G:\Wwise\Wwise_Project\WwiseTest\Booom\.cache\Windows\SFX\天使ui切换_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\天使ui切换		24016
+	1004171676	天使开始	G:\Wwise\Wwise_Project\WwiseTest\Booom\.cache\Windows\SFX\天使开始-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\天使开始		1470016
+
