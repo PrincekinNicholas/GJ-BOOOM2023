@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     [Tooltip("移动速度")]
     public float moveSpeed;
     [Tooltip("翻滚速度,即会一瞬间冲出的初始速度")]
-    public float initRollSpeed;
+    public float setRollSpeed;
     [Tooltip("翻滚速度会按照一定倍数随时间衰减，直至正常速度")]
     public float rollSpeedDropMultiplier;
     [Tooltip("短闪距离")]
@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     public GameObject teleportEffect;
     public bool lockMovement;
     public LayerMask dashLayerMask;
+    public GameObject ObstaclePrefab;
 
     private Rigidbody _rigidbody;
     private Animator _animator;
@@ -93,10 +94,17 @@ public class PlayerController : MonoBehaviour
                         rollDir = faceDir;
                     }
                     
-                    rollSpeed = initRollSpeed;
+                    rollSpeed = setRollSpeed;
                     state = State.Rolling;
-                    //等翻滚动画做好了，在这里播放翻滚动画
+                    _animator.SetBool("isRoll", true);
                 }
+
+                //之后放到技能系统里，或者直接吧技能系统的东西放到该cs文件中
+                if (Input.GetKeyDown(KeyCode.F))
+                {
+                    CreateObstacle();
+                }
+
                 break;
             case State.Rolling:
                 rollSpeed -= rollSpeed * rollSpeedDropMultiplier * Time.deltaTime;
@@ -105,6 +113,7 @@ public class PlayerController : MonoBehaviour
                 if ( rollSpeed < rollSpeedMinimum )
                 {
                     state = State.Normal;
+                    _animator.SetBool("isRoll", false);
                 }
                 break;
         }
@@ -122,6 +131,12 @@ public class PlayerController : MonoBehaviour
                 Roll();
                 break;
         }
+    }
+
+    void CreateObstacle()
+    {
+        Vector3 pos = this.transform.position + faceDir;
+        Instantiate(ObstaclePrefab, pos, Quaternion.identity);
     }
 
     void Roll()
@@ -171,5 +186,10 @@ public class PlayerController : MonoBehaviour
         }
 
         _animator.SetBool("isRun", true);
+    }
+
+    public Vector3 GetFaceDir()
+    {
+        return faceDir;
     }
 }

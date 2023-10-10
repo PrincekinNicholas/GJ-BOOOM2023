@@ -46,7 +46,7 @@ public class ThunderLightning : MonoBehaviour
             //StartPosition = EndPostion;
             //StartPosition.SetLocalPositionAndRotation(new Vector3(StartPosition.localPosition.x, StartPosition.localPosition.y + 5, StartPosition.localPosition.z), StartPosition.localRotation);
         }
-
+        
         _lineRender = GetComponent<LineRenderer>();
 
         _linePosList = new List<Vector3>();

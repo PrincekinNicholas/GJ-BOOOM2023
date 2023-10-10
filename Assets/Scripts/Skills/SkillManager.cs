@@ -10,15 +10,22 @@ public class SkillManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("Lightning", 0, skillTime);    //每隔2秒重复调用，后面结合多个技能随机选择
+        //InvokeRepeating("Lightning", 0, skillTime);    //每隔2秒重复调用，后面结合多个技能随机选择
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        KeyController();
     }
 
+    void KeyController()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Lightning();
+        }
+    }
 
     void Lightning()
     {
