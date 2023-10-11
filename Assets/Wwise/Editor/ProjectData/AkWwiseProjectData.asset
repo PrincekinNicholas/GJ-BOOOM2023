@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d8fbfd89e879f14f9dca07f947327cf9
     GuidInternal: 
-    m_lastTime: -8585045981164838725
+    m_lastTime: -8585045949550031388
     List:
     - name: All
       guid: 9476112eb13de74f9d71e85b266c251a
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 057a88c288a5504eb5a99980ad6d84d5
     GuidInternal: 
-    m_lastTime: -8585045983534937448
+    m_lastTime: -8585045945768364300
     List:
     - name: angel_switch
       guid: aa6dd34b98168b41b2f90295de0a378d
@@ -232,6 +232,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 7.656
       minDuration: 7.656
+    - name: hurt
+      guid: cd899c294f8c9f4fb9f9888327e5771d
+      id: 3193947170
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 057a88c288a5504eb5a99980ad6d84d5
+      - ElementName: hurt
+        ObjectType: 3
+        guid: cd899c294f8c9f4fb9f9888327e5771d
+      Path: Events\Default Work Unit\hurt
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: music
       guid: 37118eed4705bf4db13fa8a9adf01fe1
       id: 3991942870
@@ -357,7 +374,7 @@ MonoBehaviour:
     m_lastTime: -8585046707016705504
     List: []
   ExpandedFileSystemItemIds: 02000000030000000400000005000000ad000000ae000000
-  ExpandedWaapiItemIds: 02000000030000000400000005000000ad000000ae000000
+  ExpandedWaapiItemIds: 0200000003000000040000000500000006000000ad000000ae000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

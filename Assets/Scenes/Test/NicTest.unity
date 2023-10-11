@@ -801,6 +801,22 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 1d5d983c08fc1f64fb9957e1ac0d7ad0, type: 2}
+--- !u!114 &1074549425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074549418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a24b2f9d0872a584d999d263bca270fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerHurt:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 87ea1e96d22248b499ea9b4d3d67a48e, type: 2}
 --- !u!1 &1133166353
 GameObject:
   m_ObjectHideFlags: 0
