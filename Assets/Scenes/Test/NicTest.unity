@@ -2065,7 +2065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4406857899713110934, guid: 747f9e5ea29889b4ba6897d74867b6bb, type: 3}
       propertyPath: testSkillMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4406857899713110934, guid: 747f9e5ea29889b4ba6897d74867b6bb, type: 3}
       propertyPath: DogSkillPrefab
