@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4665043514586604484}
   - component: {fileID: 4665043514586604482}
   - component: {fileID: 4665043514586604485}
+  - component: {fileID: 229469372393985371}
   m_Layer: 0
   m_Name: dog
   m_TagString: Untagged
@@ -105,6 +106,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &229469372393985371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4665043514586604487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80280414156610c438b5a452ca4fd00c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dog:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0cd061ca2841b804faad3a39f466734f, type: 2}
 --- !u!1 &4665043514734923566
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,7 +133,6 @@ GameObject:
   - component: {fileID: 4665043514734923567}
   - component: {fileID: 2266048898132733724}
   - component: {fileID: 2266048898132733726}
-  - component: {fileID: 2818992306129193708}
   m_Layer: 0
   m_Name: DogSkill
   m_TagString: Untagged
@@ -166,19 +182,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DestroyTime: 4
---- !u!114 &2818992306129193708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4665043514734923566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80280414156610c438b5a452ca4fd00c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Dog:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 0cd061ca2841b804faad3a39f466734f, type: 2}
