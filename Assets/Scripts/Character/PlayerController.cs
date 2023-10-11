@@ -217,11 +217,12 @@ public class PlayerController : MonoBehaviour
     /// 技能列表
     /// 1 - Lightning
     /// 2 - CreateObstacle
+    /// 3 - DogSkill
     /// -----------------------------------------------------------------------------------------
 
     void RandomSkill()
     {
-        int skillIndex = Random.Range(1, 3); //左闭右开,技能增加的话要增加index上限
+        int skillIndex = Random.Range(1, 4); //左闭右开,技能增加的话要增加index上限
         switch( skillIndex)
         {
             case 1:
@@ -230,13 +231,27 @@ public class PlayerController : MonoBehaviour
             case 2:
                 CreateObstacle();
                 break;
+            case 3:
+                DogSkill();
+                break;
         }
     }
 
     void DogSkill()
     {
+        int sign1 = Random.Range(1, 3);
+        int sign2 = Random.Range(1, 3);
+        if (sign1 == 2)
+        {
+            sign1= -1;
+        }
+        if (sign2 == 2)
+        {
+            sign2 = -1;
+        }
+        float dist = Random.Range(1, 3);
         Vector3 endPos = this.transform.position;
-        Vector3 startPos = endPos + new Vector3 (-1, 0, 0);
+        Vector3 startPos = endPos + new Vector3 (sign1 * Random.Range(1, 3) , 0, sign2 * Random.Range(1, 3));
         Instantiate(DogSkillPrefab, startPos, Quaternion.identity);
     }
 
