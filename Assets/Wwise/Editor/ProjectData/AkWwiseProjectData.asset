@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d8fbfd89e879f14f9dca07f947327cf9
     GuidInternal: 
-    m_lastTime: -8585046671255733706
+    m_lastTime: -8585045981164838725
     List:
     - name: All
       guid: 9476112eb13de74f9d71e85b266c251a
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 057a88c288a5504eb5a99980ad6d84d5
     GuidInternal: 
-    m_lastTime: -8585046671335435833
+    m_lastTime: -8585045983534937448
     List:
     - name: angel_switch
       guid: aa6dd34b98168b41b2f90295de0a378d
@@ -213,8 +213,8 @@ MonoBehaviour:
         guid: 9d3dbaaf1a3b214da2480843ecd1cf28
       Path: Events\Default Work Unit\flash
       maxAttenuation: 0
-      maxDuration: 1.695417
-      minDuration: 1.695417
+      maxDuration: 0.382204
+      minDuration: 0.382204
     - name: gameStart
       guid: b0d2f997818e4043ba030ffcd4f76069
       id: 4058101365
@@ -266,6 +266,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.152134
       minDuration: 0.124502
+    - name: roll
+      guid: 2d579563c98ed246b6709519f36645df
+      id: 2026920480
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 057a88c288a5504eb5a99980ad6d84d5
+      - ElementName: roll
+        ObjectType: 3
+        guid: 2d579563c98ed246b6709519f36645df
+      Path: Events\Default Work Unit\roll
+      maxAttenuation: 0
+      maxDuration: 0.529017
+      minDuration: 0.529017
     - name: step
       guid: c834d6d50ceb8148a0c80ff16c34c04b
       id: 621108255
@@ -339,8 +356,8 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585046707016705504
     List: []
-  ExpandedFileSystemItemIds: 02000000
-  ExpandedWaapiItemIds: 02000000ad000000ae000000
+  ExpandedFileSystemItemIds: 02000000030000000400000005000000ad000000ae000000
+  ExpandedWaapiItemIds: 02000000030000000400000005000000ad000000ae000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

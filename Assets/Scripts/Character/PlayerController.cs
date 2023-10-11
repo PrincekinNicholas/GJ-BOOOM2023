@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
     private RaycastHit raycastHit;
     private State state;
     private GameObject _player;
-    
+    public AK.Wwise.Event Flash;
 
     // Start is called before the first frame update
     void Start()
@@ -91,6 +91,7 @@ public class PlayerController : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
                 {
                     isDashButtonDown = true;
+                    Flash.Post(gameObject);
                 }
 
                 if (Input.GetKeyDown(KeyCode.Space))
