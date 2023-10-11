@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
     public float skillTime = 2f;
     public GameObject LightningPrefab;
     public GameObject ObstaclePrefab;
+    public GameObject DogSkillPrefab;
 
     private Rigidbody _rigidbody;
     private Animator _animator;
@@ -120,6 +121,11 @@ public class PlayerController : MonoBehaviour
                     if (Input.GetKeyDown(KeyCode.R))
                     {
                         Lightning();
+                    }
+
+                    if (Input.GetKeyDown(KeyCode.C))
+                    {
+                        DogSkill();
                     }
                 }
                 
@@ -224,6 +230,13 @@ public class PlayerController : MonoBehaviour
                 CreateObstacle();
                 break;
         }
+    }
+
+    void DogSkill()
+    {
+        Vector3 endPos = this.transform.position;
+        Vector3 startPos = endPos + new Vector3 (-1, 0, 0);
+        Instantiate(DogSkillPrefab, startPos, Quaternion.identity);
     }
 
     void CreateObstacle()
